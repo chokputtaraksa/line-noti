@@ -1,7 +1,6 @@
 <?php
-  $token = 'EASUotBsecFW6aYjDpKhsLAyV4jamXgXd5bx0kQR0nY';
+  require_once './vendor/autoload.php';
+  $token = 'LINE_NOTIFY_TOKEN';
   $ln = new KS\Line\LineNotify($token);
-
-  $text = 'Hello Line Notify';
+  $text = 'สวัสดี Line Notify';
   $ln->send($text);
-?>
