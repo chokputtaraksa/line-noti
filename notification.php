@@ -7,4 +7,6 @@
     $ln->send($message);
   }
 
-  writeMsg('hello world~~!!');
+  writeMsg("hello world~~!!");
+
+?>
