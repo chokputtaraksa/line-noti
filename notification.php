@@ -3,8 +3,11 @@
   $token = 'EASUotBsecFW6aYjDpKhsLAyV4jamXgXd5bx0kQR0nY';
 
   $ln = new KS\Line\LineNotify($token);
+
   function writeMsg($message) {
-    $ln->send($message);
+    $text = $message;
+    echo $text;
+    $ln->send($text);
   }
 
   writeMsg("hello world~~!!");
